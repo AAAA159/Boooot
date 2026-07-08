@@ -119,7 +119,7 @@
             <div class="border-b border-white/5 pb-6 mb-12">
                 <div class="mono-label mb-2">// TRAINING PROTOCOLS</div>
                 <h2 class="text-3xl md:text-4xl font-black text-white">قوانين المبتدئين <span class="text-blue-400 font-light italic">جاهزة للتطبيق</span></h2>
-                <p class="text-slate-400 mt-2 text-sm">اضغط على أي كارت لقراءة البروتوكول كاملاً. <span class="text-pink-400 font-bold">الكارت الوردي = بروتوكول حماية العضوات.</span></p>
+                <p class="text-slate-400 mt-2 text-sm">اضغط على أي كارت لقراءة البروتوكول كاملاً. <span class="text-pink-400 font-bold">الكارت الوردي = بروتوكول حماية الأعضاء.</span></p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="cardGrid">
                 <div class="glass-node-card" data-target="intro"><div class="text-3xl mb-4">🏛️</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">INF_00</span><h3 class="text-lg font-bold text-white mb-2">ملف التعريف</h3><p class="text-slate-400 text-xs line-clamp-2">فلسفة القطاع والغرض من وجوده.</p></div>
@@ -133,7 +133,7 @@
                 <div class="glass-node-card" data-target="trn08"><div class="text-3xl mb-4">🧠</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">TRN_08</span><h3 class="text-lg font-bold text-white mb-2">طلب المساعدة</h3><p class="text-slate-400 text-xs line-clamp-2">كيف تتبنى نخبة تدريبك.</p></div>
                 <div class="glass-node-card" data-target="trn09"><div class="text-3xl mb-4">🔒</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">TRN_09</span><h3 class="text-lg font-bold text-white mb-2">سرية البيانات</h3><p class="text-slate-400 text-xs line-clamp-2">تسريب المواد = طرد.</p></div>
                 <div class="glass-node-card" data-target="trn10"><div class="text-3xl mb-4">🤝</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">TRN_10</span><h3 class="text-lg font-bold text-white mb-2">الخلايا التدريبية</h3><p class="text-slate-400 text-xs line-clamp-2">تشكيل مجموعات مصغرة.</p></div>
-                <div class="glass-node-card women-card" data-target="safety"><div class="text-3xl mb-4">🛡️</div><span class="text-[10px] font-bold block mb-1 text-pink-400" style="font-family:'Orbitron';">SAFE_01</span><h3 class="text-lg font-bold text-pink-400 mb-2">حماية العضوات</h3><p class="text-slate-400 text-xs line-clamp-2">بروتوكول الأمان والخصوصية الكامل.</p></div>
+                <div class="glass-node-card women-card" data-target="safety"><div class="text-3xl mb-4">🛡️</div><span class="text-[10px] font-bold block mb-1 text-pink-400" style="font-family:'Orbitron';">SAFE_01</span><h3 class="text-lg font-bold text-pink-400 mb-2">حماية الأعضاء</h3><p class="text-slate-400 text-xs line-clamp-2">بروتوكول الأمان والخصوصية الكامل.</p></div>
                 <div class="glass-node-card" data-target="aboutClub"><div class="text-3xl mb-4">📖</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">INFO</span><h3 class="text-lg font-bold text-white mb-2">ما هو النادي؟</h3><p class="text-slate-400 text-xs line-clamp-2">شرح مبسط عن النادي وفائدته.</p></div>
                 <div class="glass-node-card" data-target="club"><div class="text-3xl mb-4">🏛️</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">JOIN</span><h3 class="text-lg font-bold text-white mb-2">انضم إلى النادي</h3><p class="text-slate-400 text-xs line-clamp-2">رابط النادي على Chess.com.</p></div>
                 <div class="glass-node-card" data-target="weekly"><div class="text-3xl mb-4">🏆</div><span class="text-[10px] font-bold block mb-1 text-blue-400" style="font-family:'Orbitron';">EVENT</span><h3 class="text-lg font-bold text-white mb-2">البطولة الأسبوعية</h3><p class="text-slate-400 text-xs line-clamp-2">رابط البطولة في وصف الجروب.</p></div>
@@ -155,7 +155,6 @@
     <script>
         (function() {
             const clubLink = 'https://n9.cl/tawe9';
-
             const whiteRoomData = {
                 intro: {
                     title: "ملف التعريف",
@@ -172,26 +171,74 @@
                 trn09: { title: "سرية الأبحاث التكتيكية", body: `<div class="max-w-4xl mx-auto"><span class="mono-label text-blue-400 block mb-2">// TRN_09</span><h3 class="text-3xl font-black text-white mb-6">المواد سرية</h3><p class="text-slate-300 leading-relaxed justify-text">جميع الخطط والتحليلات والافتتاحيات داخل المنشأة <b>ملكية فكرية سرية</b>. تسريب أي لقطة شاشة يعرضك لـ <span class="text-red-500 font-bold animate-pulse">الطرد الفوري بتهمة الخيانة</span>.</p></div>` },
                 trn10: { title: "بروتوكول التجميع التكتيكي", body: `<div class="max-w-4xl mx-auto"><span class="mono-label text-blue-400 block mb-2">// TRN_10</span><h3 class="text-3xl font-black text-white mb-6">خلايا تدريبية</h3><p class="text-slate-300 leading-relaxed justify-text">يمكنك تشكيل مجموعة تدريبية من <b>3 أفراد كحد أقصى</b>. عليكم رفع تقارير جماعية أسبوعية. إذا فشل أحد الأعضاء، تُخصم النقاط من المجموعة كاملة. <b>لا مكان للضعف الجماعي.</b></p></div>` },
                 safety: {
-                    title: "بروتوكول حماية العضوات",
+                    title: "بروتوكول حماية الأعضاء",
                     body: `<div class="max-w-4xl mx-auto">
                 <span class="mono-label pink block mb-2">// SAFE_01</span>
                 <h3 class="text-3xl font-black text-white mb-6">قوانين الأمان والخصوصية الكاملة</h3>
                 <div class="space-y-4 text-slate-300 justify-text">
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S01 • التواصل الخاص</b><br>أي محادثة خاصة مع أي عضوة دون إذن مسبق = <span class="text-red-500 font-bold">طرد مؤبد فوري</span>.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S02 • آلية الشكوى</b><br>شكوى مدعومة بـ 4 شهود تُحفظ العضو تحت التحقيق 72 ساعة قبل أي قرار.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S03 • المكيدة الجماعية</b><br>شكوى كيدية + شهود متواطئون = <span class="text-red-500 font-bold">مؤبد للجميع</span>.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S04 • استغلال الشهود</b><br>البنت تستغل الشهود = هي وحدها تتحمل المؤبد، والشهود يُعفون بعد التحقيق.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S05 • التحرش اللفظي</b><br>أي إيحاء أو تعليق غير لائق = <span class="text-red-500 font-bold">مؤبد فوري</span>.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S06 • الخصوصية المطلقة</b><br>طلب صور أو معلومات شخصية = <span class="text-red-500 font-bold">مؤبد</span>.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S07 • حق المرافقة</b><br>يحق لأي عضوة طلب مرافقة نخبوي في أي نقاش، ويُلبى فوراً.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S08 • المساواة في التقييم</b><br>لا استثناءات بسبب الجنس، المعيار الوحيد هو <b>الأداء الرقمي</b>.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S09 • حظر الإسقاطات الجندرية</b><br>أي تعليق ينتقص من قدرات العضوة = مخالفة، والتكرار = <span class="text-red-500 font-bold">طرد</span>.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S10 • قناة التقارير السرية</b><br>بلاغات حساسة عبر قناة مشفرة لا يراها إلا الثلاثة الأوائل في النخبة.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S11 • حماية المُبلِّغة</b><br>الانتقام من مُبلِّغة = <span class="text-red-500 font-bold">طرد فوري</span>. يُمنع ذكر اسمها دون إذنها.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S12 • منع الإحراج العلني</b><br>النقد الفني للمباراة فقط، وليس لشخص العضوة أو أسلوبها أمام الجمهور.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S13 • تعهد الطرفين</b><br>لا شهود = يُحفظ البلاغ بتعهد الطرفين. تكرار البلاغ = تحقيق رسمي.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S14 • العقوبات التفاضلية</b><br>الضرر الجسيم = <span class="text-red-500 font-bold">طرد مشين</span> ومنع العودة بأي هوية.</div>
-                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl"><b>S15 • قسم الانضباط</b><br>كل عضو جديد يقرأ البروتوكول كاملاً ويوافق قبل أول مباراة.</div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S01 • التواصل المُسيء والمُحرّم</b><br>
+                        <span class="text-red-500 font-bold">أبرئ نفسي أمام الله من أي ذنب.</span><br>
+                        • أي تواصل بين ذكر وأنثى (في العام أو الخاص) خارج النطاق التدريبي = <span class="text-red-500 font-bold">مؤبد فوري</span>.<br>
+                        • أي إهانة أو سب أو إساءة موثقة بدليل (سكرين شوت) في أي محادثة = <span class="text-red-500 font-bold">مؤبد فوري</span>.<br>
+                        • يتم حذف الرسائل المخالفة فور رصدها. لا مكان لقلة الأدب.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S02 • آلية الشكوى الرسمية</b><br>
+                        شكوى مدعومة بـ <b>4 شهود أو أكثر</b> تُحفظ العضو تحت التحقيق 72 ساعة، ولا يُتخذ قرار إلا بعد اكتمال التحقيق.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S03 • المكيدة الجماعية</b><br>
+                        شكوى كيدية + شهود متواطئون = <span class="text-red-500 font-bold">مؤبد للجميع</span>.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S04 • استغلال الشهود</b><br>
+                        الشاكي يستغل الشهود = هو وحده يتحمل المؤبد، والشهود يُعفون بعد التحقيق.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S05 • التحرش اللفظي والإيحاءات</b><br>
+                        أي كلمة أو إيحاء غير لائق = <span class="text-red-500 font-bold">مؤبد فوري</span>.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S06 • الخصوصية المطلقة</b><br>
+                        طلب صور أو معلومات شخصية = <span class="text-red-500 font-bold">مؤبد</span>.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S07 • حق المرافقة</b><br>
+                        يحق لأي عضو طلب مرافقة نخبوي في أي نقاش، ويُلبى فوراً.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S08 • المساواة المطلقة</b><br>
+                        لا معاملة تفضيلية. المعيار الوحيد هو <b>الأداء الرقمي</b>.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S09 • حظر الإسقاطات الشخصية</b><br>
+                        أي تعليق ينتقص من قدرات عضو = مخالفة، والتكرار = <span class="text-red-500 font-bold">طرد</span>.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S10 • قناة التقارير السرية</b><br>
+                        بلاغات حساسة عبر قناة مشفرة للثلاثة الأوائل في النخبة.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S11 • حماية المُبلِّغ</b><br>
+                        الانتقام من مُبلِّغ = <span class="text-red-500 font-bold">طرد فوري</span>. يُمنع ذكر اسمه دون إذن.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S12 • منع الإحراج العلني</b><br>
+                        النقد الفني للمباراة فقط، وليس لشخص العضو أو أسلوبه.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S13 • تعهد الطرفين</b><br>
+                        لا شهود = يُحفظ البلاغ بتعهد الطرفين. تكرار البلاغ = تحقيق رسمي.
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S14 • العقوبات التفاضلية</b><br>
+                        الضرر الجسيم = <span class="text-red-500 font-bold">طرد مشين</span> (طرد نهائي مع منع العودة بأي حساب آخر، ويُسجل السبب في سجل المنشأة).
+                    </div>
+                    <div class="p-3 bg-white/5 border border-pink-500/20 rounded-xl">
+                        <b>S15 • قسم الانضباط</b><br>
+                        كل عضو جديد يقرأ البروتوكول كاملاً ويوافق قبل أول مباراة.
+                    </div>
                 </div>
             </div>`
                 },
@@ -200,12 +247,10 @@
                 weekly: { title: "البطولة الأسبوعية - الجمعة", body: `<div class="max-w-4xl mx-auto"><span class="mono-label text-blue-400 block mb-2">// EVENT</span><h3 class="text-3xl font-black text-white mb-6">بطولة الجمعة</h3><p class="text-slate-300 leading-relaxed mb-6 justify-text">تُقام بطولة أسبوعية كل جمعة على Chess.com. رابط البطولة يتغير أسبوعياً.<br><br>📌 <b>لمعرفة رابط البطولة الحالية، يرجى مراجعة وصف جروب المبتدئين على واتساب.</b> يتم نشر الرابط الجديد هناك مع بداية كل أسبوع.</p></div>` },
                 contact: { title: "تواصل سريع مع النخبة", body: `<div class="max-w-2xl mx-auto text-center"><span class="mono-label text-blue-400 block mb-2">// TRN_11</span><h3 class="text-3xl font-black text-white mb-6">طلب مساعدة أو استفسار</h3><p class="text-slate-300 mb-8">املأ البيانات وسيتم توجيهك فوراً إلى محادثة واتساب مع أحد أعضاء النخبة. الرسالة تكون جاهزة، فقط اضغط إرسال هناك.</p><form id="contactForm" class="space-y-5" style="text-align:right;"><div><label class="block text-sm font-bold text-white mb-2">الاسم أو اللقب</label><input type="text" id="contactName" required placeholder="كيف نناديك؟" class="input-field"></div><div><label class="block text-sm font-bold text-white mb-2">الطلب أو المشكلة</label><textarea id="contactMessage" required rows="4" placeholder="اكتب رسالتك أو سؤالك هنا..." class="input-field"></textarea></div><button type="submit" class="btn-elite w-full justify-center text-center"><span>📱</span> إرسال إلى واتساب النخبة</button></form><p class="text-xs text-slate-500 mt-4">سيتم اختيار رقم نخبة عشوائي للتواصل معك مباشرة.</p></div>` }
             };
-
             const dynamicViewportContainer = document.getElementById('dynamicViewportContainer');
             const threatLevelEl = document.getElementById('threatLevel');
             const threatFillEl = document.getElementById('threatFill');
             const whisperEl = document.getElementById('dynamicWhisper');
-
             function renderSectionContent(sectionId) {
                 if (!whiteRoomData[sectionId]) return;
                 document.querySelectorAll('.full-section-viewport.active').forEach(s => s.classList.remove('active'));
@@ -226,7 +271,6 @@
                     targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
             }
-
             function handleContactSubmit(event) {
                 event.preventDefault();
                 const name = document.getElementById('contactName').value.trim();
@@ -235,7 +279,6 @@
                 const phones = ['201131543403', '201118449087'];
                 window.open(`https://wa.me/${phones[Math.floor(Math.random()*phones.length)]}?text=${encodeURIComponent(`مرحباً، أنا ${name}.\n\n${message}`)}`, '_blank');
             }
-
             document.getElementById('cardGrid').addEventListener('click', e => {
                 const card = e.target.closest('.glass-node-card');
                 if (card) renderSectionContent(card.getAttribute('data-target'));
@@ -245,7 +288,6 @@
             document.getElementById('logoHome').addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
             document.getElementById('navHomeLink').addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
             document.getElementById('navGridLink').addEventListener('click', e => { e.preventDefault(); document.getElementById('nodesGridSection').scrollIntoView({ behavior: 'smooth' }); });
-
             const threatStates = [
                 { text: 'منخفض جداً', color: '#00cc66', width: '20%', shadow: '0 0 10px #00cc66' },
                 { text: 'منخفض', color: '#66cc00', width: '35%', shadow: '0 0 12px #66cc00' },
@@ -266,7 +308,6 @@
             };
             updateThreat();
             setInterval(updateThreat, 8000);
-
             const whispers = [
                 "القدرة بدون جهد لا تعني شيئاً.", "كل خطوة تخطوها... نرصدها.", "النخبة لا تشكو. النخبة تتكيف.",
                 "هل تشعر بالدفء؟ إنه ضغط التوقعات.", "تذكر: الغرفة البيضاء لا ترحم.", "خطأ واحد وأنت في الخارج.",
